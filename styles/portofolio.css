@@ -2,6 +2,7 @@
   --primary-font: 'Playfair Display', serif;
   --secondary-font:font-family: 'Fauna One', serif;
   --primary-color: #b4c7b0;
+  --buttons: 1px solid black;
 }
 
 body {
@@ -82,15 +83,26 @@ container {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 0;
+  border: var(--buttons);
 }
 
+
 .info-link:hover {
-  background-color: rgb(255, 255, 255, 0.5);
-  color: black;
+  background: var(--primary-color);
+  opacity: 0.8;
+  box-shadow: var(--box-shadow);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.open-projects-btn {
+
+}
+
+#weather-btn {
+text-align: right!important;
 }
 
 .row {
@@ -107,7 +119,7 @@ container {
 }
 
 .contact-me-btn, .my-work-btn {
-  border: 1px solid black;
+  border: var(--buttons);
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -176,9 +188,24 @@ p {
   .weather-paragraph,
   .self-care-paragraph {
     margin: 40px;
+    text-align: center;
   }
-  .info-link {
-    margin: 40px;
+
+  .weather-app {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+
+  .open-projects-btn {
+    text-align: center;
+  }
+
+  #weather-btn {
+    text-align: center!important;
   }
 }
 
