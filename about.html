@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/71def6b447.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/portofolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>About Me</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="homepage">Codruta Blaga</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact">
+                  Contact Me
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn search-btn" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="about-hero">
+      <h1>About Me</h>
+        <div class="container">
+            <div class="row" id="about-hero">
+                <div class="col-6">
+        <img src="images/selfie.png" class="profile-pic" />
+        </div>
+        <div class="col-6">
+        <p class="about-paragraph">
+          Hi, I'm Cody. I am a freelance front-end developer with quite an
+          interesting story. I am a coffee addict and an animal and plants
+          lover. <br />
+          I was a psychology student who one day started questioning her career
+          path. During this time I was looking for something to do over the
+          summer and came across a front-end development course. Here I found my
+          passion for front-end development, especially web design and
+          development. I am so exited to get to make all my ideas and designs
+          real and to help others create the beautiful website they deserve.
+        </p>
+        </div>
+        </div>
+        </div>
+    </div>
+     <div id="contact">
+      <h2>📮 Contact me</h2>
+      <a href="mailto:codydenisa16@gmail.com" class="email-link mb-5">
+        codydenisa16@gmail.com
+      </a>
+    </div>
+    <footer>
+      <div class="footer">
+      <div class="footer-title">Let's get social</div>
+      <ul class="social-icons">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/codycodu/portofolio-project" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/codruta-blaga-400a341b7/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </ul>
+      </div>
+    </footer>
+  </body>
 </html>

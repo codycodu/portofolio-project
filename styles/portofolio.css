@@ -7,10 +7,7 @@
 
 body {
   background: white;
-}
-
-.hero-background {
-  background-image: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  margin: 0!important;
 }
 
 h1 {
@@ -26,21 +23,7 @@ h2 {
 
 footer {
   text-align: center;
-}
-
-.footer {
-  background-image: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  padding: 20px;
-}
-
-.footer-title {
-  font-size: 20px;
-  text-align: center;
-}
-
-.social-icons {
-  font-size: 30px;
-  padding-left: 0;
+  margin:0!important;
 }
 
 a {
@@ -49,6 +32,45 @@ a {
 
 a:hover {
   color: --primary-color!important;
+}
+
+.profile-pic {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.hero-background {
+  background-image: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+.footer-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: darkgreen;
+}
+
+#contact {
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 30px;
+  padding-left: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .hero {
@@ -74,10 +96,6 @@ a:hover {
   padding: 15px 30px;
 }
 
-container {
-  margin-bottom: 20px;
-}
-
 .info-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -95,14 +113,6 @@ container {
   box-shadow: var(--box-shadow);
   color: rgb(255, 255, 255);
   border: none;
-}
-
-.open-projects-btn {
-
-}
-
-#weather-btn {
-text-align: right!important;
 }
 
 .row {
@@ -166,6 +176,10 @@ p {
   text-align: right;
 }
 
+.search-btn {
+  border: 1px solid black;
+}
+
 @media (max-width: 575px) {
   h1,
   .about-me {
@@ -196,10 +210,6 @@ p {
     margin-bottom: 20px;
   }
 
-  footer {
-    margin-top: 40px;
-  }
-
   .open-projects-btn {
     text-align: center;
   }
@@ -207,8 +217,30 @@ p {
   #weather-btn {
     text-align: center!important;
   }
+   #contact,
+  .email-link {
+    font-size: 20px;
+  }
 }
 
-.search-btn {
-  border: 1px solid black;
+.about-hero h1{
+  margin-bottom: 0px;
+  margin-left: 20px;
+  padding: 50px;
 }
+
+.about-hero {
+  padding: 100px;
+}
+
+
+#about-hero {
+  margin-top: 0px;
+  padding-left: 0;
+}
+
+#weather-btn {
+text-align: right!important;
+}
+
+
