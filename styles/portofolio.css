@@ -42,6 +42,14 @@ footer {
   padding-left: 0;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: --primary-color!important;
+}
+
 .hero {
   text-align: center;
   padding: 160px 20px;
@@ -96,6 +104,18 @@ container {
   height: auto;
   margin-bottom: 30px;
   margin-top: 40px;
+}
+
+.contact-me-btn, .my-work-btn {
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact-me-btn:hover, .my-work-btn:hover {
+  background:var(--primary-color);
+  opacity: 0.8;
+  color: white;
 }
 
 .weather-app,
