@@ -1,3 +1,167 @@
+:root {
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font:font-family: 'Fauna One', serif;
+  --primary-color: #b4c7b0;
+}
+
+body {
+  background: white;
+}
+
+.hero-background {
+  background-image: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
 h1 {
-  color: brown;
+  color: #000000;
+  margin: 0;
+  font-size: 96px;
+  font-family: var(--primary-font);
+}
+
+h2 {
+  font-family: var(--secondary-font);
+}
+
+footer {
+  text-align: center;
+}
+
+.footer {
+  background-image: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  padding: 20px;
+}
+
+.footer-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 30px;
+  padding-left: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: light;
+  margin: 0;
+}
+
+.hero h2 {
+  line-height: 2;
+  font-size: 24px;
+}
+
+.btn-branding {
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+container {
+  margin-bottom: 20px;
+}
+
+.info-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  margin-left: 0;
+}
+
+.info-link:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.weather-app,
+.sef-care-app {
+  width: 100%;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.weather-paragraph,
+.self-care-paragraph {
+  margin-top: 40px;
+}
+
+.weather-paragraph {
+  text-align: right;
+}
+
+@media (max-width: 575px) {
+  h1,
+  .about-me {
+    font-size: 50px;
+  }
+  #contact,
+  .email-link {
+    font-size: 20px;
+  }
+  .img-fluid {
+    padding: 20px;
+  }
+  h1,
+  h2,
+  h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  .weather-paragraph,
+  .self-care-paragraph {
+    margin: 40px;
+  }
+  .info-link {
+    margin: 40px;
+  }
+}
+
+.search-btn {
+  border: 1px solid black;
 }
