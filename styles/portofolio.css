@@ -43,7 +43,7 @@ body {
 }
 
 .home-hero {
-  background-image: url("https://i0.wp.com/www.luamaralstudio.com/wp-content/uploads/2020/06/photoshop-1.gif?w=500&ssl=1");
+  background-image: url("https://i.pinimg.com/originals/43/ed/90/43ed9000bd258bec1039149f7a718d5a.jpg");
   text-align: center;
   padding: 160px 20px;
 }
@@ -65,6 +65,12 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
+  font-family: var(--secondary-font);
+}
+
+hr {
+  width: 50%;
+  margin: 0 auto;
 }
 
 footer {
@@ -207,7 +213,6 @@ a:hover {
   text-align: right !important;
 }
 
-
 @media (max-width: 100px) {
   #contact {
     text-align: center;
@@ -270,4 +275,3 @@ a:hover {
     font-size: 20px;
   }
 }
-
