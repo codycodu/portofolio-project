@@ -1,35 +1,93 @@
 :root {
-  --primary-font: 'Playfair Display', serif;
-  --secondary-font:font-family: 'Fauna One', serif;
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "Fauna One", serif;
   --primary-color: #b4c7b0;
   --buttons: 1px solid black;
+  --main-font: "Silkscreen", cursive;
 }
 
 body {
   background: white;
-  margin: 0!important;
+  margin: 0 !important;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.hero {
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: light;
+  margin: 0;
+}
+
+.hero h2 {
+  line-height: 2;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.home-hero {
+  background-image: url("https://i0.wp.com/www.luamaralstudio.com/wp-content/uploads/2020/06/photoshop-1.gif?w=500&ssl=1");
+  text-align: center;
+  padding: 160px 20px;
 }
 
 h1 {
   color: #000000;
   margin: 0;
   font-size: 96px;
-  font-family: var(--primary-font);
+  font-family: var(--main-font);
 }
 
 h2 {
-  font-family: var(--secondary-font);
+  font-family: var(--main-font);
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 footer {
   text-align: center;
-  margin:0!important;
+  margin: 0 !important;
   padding: 20px;
+}
+
+.footer-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 30px;
+  padding-left: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 #contact-footer {
   text-align: center;
-  margin:0!important;
+  margin: 0 !important;
   padding: 20px;
   position: absolute;
   bottom: 0;
@@ -38,39 +96,35 @@ footer {
 }
 
 a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 a:hover {
-  color: --primary-color!important;
+  color: --primary-color !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.weather-app,
+.sef-care-app {
+  width: 100%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .profile-pic {
   max-width: 100%;
   width: 300px;
   border-radius: 10px;
-}
-
-.hero-background {
-  background-image: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-}
-
-.footer-title {
-  font-size: 20px;
-  text-align: center;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: rgb(0, 0, 0);;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-  color: darkgreen;
 }
 
 #contact {
@@ -84,32 +138,17 @@ a:hover {
   margin-bottom: 100px;
 }
 
-#contact-hero {
-  text-align: center;
-  padding-top: 40px;;
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.social-icons {
-  font-size: 30px;
-  padding-left: 0;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-.hero {
-  text-align: center;
-  padding: 160px 20px;
-}
-
-.hero p {
-  font-size: 36px;
-  font-weight: light;
-  margin: 0;
-}
-
-.hero h2 {
-  line-height: 2;
-  font-size: 24px;
+.email-link:hover {
+  text-decoration: underline;
+  color: darkgreen;
 }
 
 .btn-branding {
@@ -129,7 +168,6 @@ a:hover {
   border: var(--buttons);
 }
 
-
 .info-link:hover {
   background: var(--primary-color);
   opacity: 0.8;
@@ -138,56 +176,18 @@ a:hover {
   border: none;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 60px;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-.contact-me-btn, .my-work-btn {
+.contact-me-btn,
+.my-work-btn {
   border: var(--buttons);
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.contact-me-btn:hover, .my-work-btn:hover {
-  background:var(--primary-color);
+.contact-me-btn:hover,
+.my-work-btn:hover {
+  background: var(--primary-color);
   opacity: 0.8;
   color: white;
-}
-
-.weather-app,
-.sef-care-app {
-  width: 100%;
-}
-
-p {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 
 .weather-paragraph,
@@ -203,24 +203,29 @@ p {
   border: 1px solid black;
 }
 
-@media (max-width: 100px) {
- #contact {
-  text-align: center;
-  background:var(--primary-color);
-  border: none;
-  border-radius: 5px;
-  opacity: 0.5;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 20px;
-  margin-top: 4px;
-  margin-bottom: 100px;
+#weather-btn {
+  text-align: right !important;
 }
 
-#contact-hero {
-  text-align: center;
-  padding-top: 40px;;
-}
+
+@media (max-width: 100px) {
+  #contact {
+    text-align: center;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    opacity: 0.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-bottom: 100px;
+  }
+
+  #contact-hero {
+    text-align: center;
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -258,32 +263,11 @@ p {
   }
 
   #weather-btn {
-    text-align: center!important;
+    text-align: center !important;
   }
-   #contact,
+  #contact,
   .email-link {
     font-size: 20px;
   }
 }
-
-.about-hero h1{
-  margin-bottom: 0px;
-  margin-left: 20px;
-  padding: 50px;
-}
-
-.about-hero {
-  padding: 100px;
-}
-
-
-#about-hero {
-  margin-top: 0px;
-  padding-left: 0;
-}
-
-#weather-btn {
-text-align: right!important;
-}
-
 
