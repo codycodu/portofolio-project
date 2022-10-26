@@ -4,10 +4,15 @@
   --secondary-font: "Fauna One", serif;
   --primary-color: #b4c7b0;
   --buttons: 1px solid black;
+  --color-one: #edeae5;
+  --color-two: #ded2c4;
+  --color-three: #cec2b4;
+  --color-four: #cec2b4;
+  --color-five: #7c756b;
 }
 
 body {
-  background: white;
+  background: var(--color-one);
   margin: 0 !important;
 }
 
@@ -28,7 +33,7 @@ body {
 .hero {
   text-align: center;
   padding: 160px 20px;
-  background-color: #eae4e6;
+  background-color: var(--color-four)
 }
 
 .hero p {
@@ -52,12 +57,12 @@ h1 {
   color: #000000;
   margin: 0;
   font-size: 96px;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   text-align: center;
 }
 
 h2 {
-  font-family: var(--main-font);
+  font-family: var(--secondary-font);
   text-align: center;
 }
 
@@ -89,11 +94,12 @@ hr {
 
 footer {
   padding: 0px;
-  background-color: #eae4e6;
+  background-color: var(--color-four);
 }
 
 .footer-text {
   padding: 30px 20px;
+  margin-top: 20px;
 }
 
 #footer-container {
@@ -118,7 +124,7 @@ a {
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--color-five);
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -164,11 +170,20 @@ a:hover {
   color: rgb(0, 0, 0);
   font-size: 20px;
   text-decoration: none;
+  margin-top: 40px;
+  font-family: var(--secondary-font);
 }
 
 .email-link:hover {
-  text-decoration: underline;
-  color: darkgreen;
+  text-decoration: none;
+  color: var(--color-five);
+  font-family: var(--secondary-font);
+}
+
+.fa-envelope {
+  margin-right: 10px;
+  margin-top: 5px;
+  color: var(--color-five);
 }
 
 .btn-branding {
@@ -189,7 +204,7 @@ a:hover {
 }
 
 .info-link:hover {
-  background: var(--primary-color);
+  background: var(--color-five);
   opacity: 0.8;
   box-shadow: var(--box-shadow);
   color: rgb(255, 255, 255);
@@ -205,7 +220,7 @@ a:hover {
 
 .contact-me-btn:hover,
 .my-work-btn:hover {
-  background: var(--primary-color);
+  background: var(--color-five);
   opacity: 0.8;
   color: white;
 }
@@ -264,15 +279,15 @@ a:hover {
   #weather-btn {
     text-align: center !important;
   }
-  #contact,
+  #contact-details,
   .email-link {
     font-size: 20px;
   }
-  #contact {
+  #contact-details {
     margin-left: 100px;
     margin-right: 100px;
     padding: 20px;
-    margin-top: 4px;
+    margin-top: 20px;
     margin-bottom: 100px;
   }
 }
