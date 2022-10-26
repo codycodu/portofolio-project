@@ -1,9 +1,9 @@
 :root {
+  --main-font: "Silkscreen", cursive;
   --primary-font: "Playfair Display", serif;
   --secondary-font: "Fauna One", serif;
   --primary-color: #b4c7b0;
   --buttons: 1px solid black;
-  --main-font: "Silkscreen", cursive;
 }
 
 body {
@@ -41,18 +41,36 @@ body {
   line-height: 2;
   font-size: 24px;
   color: rgb(0, 0, 0);
+  text-align: center;
 }
 
+#about-hero {
+  background: white;
+}
 
 h1 {
   color: #000000;
   margin: 0;
   font-size: 96px;
   font-family: var(--main-font);
+  text-align: center;
 }
 
 h2 {
   font-family: var(--main-font);
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+
+h4 {
+  font-size: 15px;
+  font-family: var(--secondary-font);
+  margin-bottom: 0;
 }
 
 p {
@@ -70,46 +88,45 @@ hr {
 }
 
 footer {
-  text-align: center;
-  margin: 0 !important;
-  padding: 20px;
+  padding: 0px;
   background-color: #eae4e6;
 }
 
-.footer-title {
-  font-size: 20px;
-  text-align: center;
+.footer-text {
+  padding: 30px 20px;
+}
+
+#footer-container {
+  padding: 0;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 20px;
+  margin: 0;
 }
 
 .social-icons {
   font-size: 30px;
-  padding-left: 0;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-#contact-footer {
-  text-align: center;
-  margin: 0 !important;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
+  text-align: right !important;
+  padding: 30px 20px;
 }
 
 a {
   color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 a:hover {
-  color: --primary-color !important;
+  color: var(--primary-color);
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .weather-app,
@@ -210,26 +227,6 @@ a:hover {
   text-align: right !important;
 }
 
-@media (max-width: 100px) {
-  #contact {
-    text-align: center;
-    background: var(--primary-color);
-    border: none;
-    border-radius: 5px;
-    opacity: 0.5;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 20px;
-    margin-top: 4px;
-    margin-bottom: 100px;
-  }
-
-  #contact-hero {
-    text-align: center;
-    padding-top: 40px;
-  }
-}
-
 @media (max-width: 575px) {
   h1,
   .about-me {
@@ -270,5 +267,12 @@ a:hover {
   #contact,
   .email-link {
     font-size: 20px;
+  }
+  #contact {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-bottom: 100px;
   }
 }
