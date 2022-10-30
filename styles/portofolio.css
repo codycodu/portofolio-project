@@ -7,13 +7,26 @@
   --color-one: #edeae5;
   --color-two: #ded2c4;
   --color-three: #cec2b4;
-  --color-four: #cec2b4;
+  --color-four: #d3d4c7;
   --color-five: #7c756b;
 }
 
 body {
-  background: var(--color-one);
+  background: var(--color-four);
   margin: 0 !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background: #d3d4c7;
+  margin-top: 50px;
+}
+
+.navbar {
+  color: var(--color-four);
+  border: 1px solid #bdbdb4;
 }
 
 .navigation-links {
@@ -31,10 +44,10 @@ body {
 }
 
 .hero {
-  text-align: center;
-  padding: 160px 20px;
-  background-color: var(--color-four)
+  padding: 100px 120px;
+  background-color: var(--color-four);
 }
+
 
 .hero p {
   font-size: 20px;
@@ -43,14 +56,50 @@ body {
 }
 
 .hero h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   line-height: 2;
-  font-size: 24px;
+  font-size: 20px;
   color: rgb(0, 0, 0);
-  text-align: center;
+  font-family: "Special Elite", cursive;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  animation: normal;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-#about-hero {
-  background: white;
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+
+.hero h1 {
+  letter-spacing: 10px;
+  font-size: 100px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
 }
 
 h1 {
@@ -58,12 +107,11 @@ h1 {
   margin: 0;
   font-size: 96px;
   font-family: var(--primary-font);
-  text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: var(--secondary-font);
-  text-align: center;
 }
 
 h3 {
@@ -88,18 +136,24 @@ p {
 }
 
 hr {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
 footer {
   padding: 0px;
   background-color: var(--color-four);
+  margin-top: auto;
 }
 
 .footer-text {
   padding: 30px 20px;
   margin-top: 20px;
+  font-size: 25px;
+}
+
+.footer-col {
+  padding: 0!important;
 }
 
 #footer-container {
@@ -115,7 +169,12 @@ footer {
 .social-icons {
   font-size: 30px;
   text-align: right !important;
-  padding: 30px 20px;
+  padding: 40px 30px;
+  letter-spacing: 20px;
+}
+
+.social-icons:hover {
+  letter-spacing: 20px;
 }
 
 a {
@@ -141,7 +200,7 @@ a:hover {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   margin-bottom: 30px;
   margin-top: 40px;
@@ -151,6 +210,9 @@ a:hover {
   max-width: 100%;
   width: 300px;
   border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 #contact {
@@ -216,6 +278,8 @@ a:hover {
   border: var(--buttons);
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .contact-me-btn:hover,
@@ -243,17 +307,24 @@ a:hover {
 }
 
 @media (max-width: 575px) {
-  h1,
-  .about-me {
-    font-size: 50px;
+  .hero h1 {
+    font-size: 40px;
+    text-align: center;
   }
+  
+  p {
+    text-align: center;
+  }
+
   #contact,
   .email-link {
     font-size: 20px;
   }
+
   .img-fluid {
     padding: 20px;
   }
+
   h1,
   h2,
   h3 {
@@ -261,6 +332,7 @@ a:hover {
     padding-right: 20px;
     padding-top: 10px;
   }
+
   .weather-paragraph,
   .self-care-paragraph {
     margin: 40px;
@@ -279,10 +351,13 @@ a:hover {
   #weather-btn {
     text-align: center !important;
   }
+
   #contact-details,
   .email-link {
     font-size: 20px;
+    text-align: center;
   }
+
   #contact-details {
     margin-left: 100px;
     margin-right: 100px;
@@ -290,4 +365,16 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 100px;
   }
+
+  .footer-text,
+  .social-icons {
+    font-size: 15px;
+  }
+
+  .contact-me-btn,
+.my-work-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 }
