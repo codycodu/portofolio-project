@@ -6,7 +6,7 @@
   --buttons: 1px solid black;
   --color-one: #edeae5;
   --color-two: #ded2c4;
-  --color-three: #cec2b4;
+  --color-three: #bfc0b6;
   --color-four: #d3d4c7;
   --color-five: #7c756b;
 }
@@ -21,10 +21,16 @@ body {
 
 .container {
   background: #d3d4c7;
-  margin-top: 50px;
+  margin-top: 10px;
+}
+
+.container, h2 {
+  text-transform: capitalize;
 }
 
 .navbar {
+  display: flex;
+  flex-wrap: wrap;
   color: var(--color-four);
   border: 1px solid #bdbdb4;
 }
@@ -48,49 +54,11 @@ body {
   background-color: var(--color-four);
 }
 
-
 .hero p {
   font-size: 20px;
   font-weight: light;
   margin: 0;
 }
-
-.hero h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  line-height: 2;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  font-family: "Special Elite", cursive;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  animation: normal;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 40%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
 
 .hero h1 {
   letter-spacing: 10px;
@@ -121,7 +89,7 @@ h3 {
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 24px;
   font-family: var(--secondary-font);
   margin-bottom: 0;
 }
@@ -141,24 +109,34 @@ hr {
 }
 
 footer {
+  position: relative;
   padding: 0px;
-  background-color: var(--color-four);
+  background-color: var(--color-three);
   margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-text {
-  padding: 30px 20px;
+  padding: 30px 40px;
   margin-top: 20px;
   font-size: 25px;
 }
 
 .footer-col {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 #footer-container {
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+ .copy-right-text {
+    margin: 10px 0 0 0;
+  }
 
 .col-6 {
   width: 50%;
@@ -166,15 +144,16 @@ footer {
   margin: 0;
 }
 
+.footer-social {
+  padding: 30px 40px;
+  margin-top: 20px;
+}
+
 .social-icons {
   font-size: 30px;
   text-align: right !important;
-  padding: 40px 30px;
-  letter-spacing: 20px;
-}
-
-.social-icons:hover {
-  letter-spacing: 20px;
+  padding: 0px 0px;
+  letter-spacing: 10px;
 }
 
 a {
@@ -191,7 +170,7 @@ a:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .weather-app,
@@ -200,10 +179,11 @@ a:hover {
 }
 
 .img-fluid {
-  max-width: 70%;
+  max-width: 90%;
   height: auto;
   margin-bottom: 30px;
   margin-top: 40px;
+  margin-left: 60px;
 }
 
 .profile-pic {
@@ -252,7 +232,6 @@ a:hover {
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 30px;
 }
 
 .info-link {
@@ -294,26 +273,32 @@ a:hover {
   margin-top: 40px;
 }
 
-.weather-paragraph {
-  text-align: right;
-}
-
 .search-btn {
   border: 1px solid black;
 }
 
-#weather-btn {
-  text-align: right !important;
-}
 
 @media (max-width: 575px) {
   .hero h1 {
-    font-size: 40px;
-    text-align: center;
+    font-size: 10vw;
+    
   }
-  
+
+  .hero h2 {
+    font-size: 5vw;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 5vw;
+  }
+
   p {
     text-align: center;
+    font-size: 5vw;
   }
 
   #contact,
@@ -328,9 +313,9 @@ a:hover {
   h1,
   h2,
   h3 {
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 10px;
+    text-align: center;
+    font-size: 10vw;
   }
 
   .weather-paragraph,
@@ -366,15 +351,52 @@ a:hover {
     margin-bottom: 100px;
   }
 
-  .footer-text,
   .social-icons {
-    font-size: 15px;
+    font-size: 5vw;
+    padding: 0px 10px 10px 10px;
+    text-align: left!important;
+  }
+
+  .footer-text {
+    margin-top: 0;
+  }
+
+  .footer-text, p {
+    margin-bottom: 0;
+    padding: 10px 0px 10px 20px;
+  }
+
+  .footer-social {
+    margin-top: 0;
+    padding: 10px 10px 0 20px;
+  }
+
+  #footer-text {
+    font-size: 5vw;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+ .social-icons, ul {
+    padding-left: 0;
+    margin-top: 5px;
   }
 
   .contact-me-btn,
-.my-work-btn {
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-}
+  .my-work-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px!important;
+  }
+
+  .btn {
+    padding: 5px;
+    font-size: 5vw;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .info-link {
+    padding: 10px 10px;
+  }
 }
