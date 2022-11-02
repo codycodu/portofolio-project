@@ -13,7 +13,7 @@
 
 body {
   background: var(--color-four);
-  margin: 0 !important;
+  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,10 +29,11 @@ body {
 }
 
 .navbar {
+  background-color: var(--color-three);
   display: flex;
   flex-wrap: wrap;
   color: var(--color-four);
-  border: 1px solid #bdbdb4;
+  border: 1px solid var(--color-three);
 }
 
 .navigation-links {
@@ -66,8 +67,20 @@ body {
 }
 
 .about-section {
-  padding: 50px;
-  text-align: center;
+  padding: 50px 150px;
+}
+
+ #about-section {
+  font-size: 60px;
+}
+
+.about-text {
+  padding-top: 20px;
+  text-align: left;
+}
+
+p, h1, h2, h3, h4 {
+  text-transform:none;
 }
 
 h1 {
@@ -98,8 +111,8 @@ p {
   padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 2;
   font-family: var(--secondary-font);
 }
 
@@ -151,6 +164,12 @@ footer {
 
 .social-icons {
   font-size: 30px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.social-icons-footer {
+  font-size: 30px;
   text-align: right !important;
   padding: 0px 0px;
   letter-spacing: 10px;
@@ -171,28 +190,36 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.about-row {
+  margin: 50px 0 50px 0;
 }
 
 .weather-app,
-.sef-care-app {
-  width: 100%;
+.self-care-app {
+  width: 400px;
 }
 
-.img-fluid {
-  max-width: 90%;
+img {
+  max-width: 50%;
   height: auto;
   margin-bottom: 30px;
   margin-top: 40px;
   margin-left: 60px;
 }
 
+img:hover {
+  box-shadow: 0 20px rgb(0, 0, 0, 0.2);
+  max-width: 450px;
+}
+
+
 .profile-pic {
   max-width: 100%;
   width: 300px;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 0;
 }
 
 #contact {
@@ -228,11 +255,6 @@ a:hover {
   color: var(--color-five);
 }
 
-.btn-branding {
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-}
 
 .info-link {
   border-radius: 4px;
@@ -240,32 +262,36 @@ a:hover {
   text-decoration: none;
   text-transform: capitalize;
   color: rgb(0, 0, 0);
+  font-family: var(--secondary-font);
   margin-left: 0;
   border: var(--buttons);
+  box-shadow: 10px 10px var(--color-five);
 }
 
+.contact-me-btn:hover,
+.my-work-btn:hover,
 .info-link:hover {
-  background: var(--color-five);
-  opacity: 0.8;
-  box-shadow: var(--box-shadow);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-five);
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 20px 15px;
+  margin: 10px 10px 0px 0px;
+  letter-spacing: 0;
+  font-weight:bolder;
+  color: white;
   border: none;
+}
+
+.open-projects-btn {
+  padding: 0;
 }
 
 .contact-me-btn,
 .my-work-btn {
-  border: var(--buttons);
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 15px;
   margin-top: 15px;
-}
-
-.contact-me-btn:hover,
-.my-work-btn:hover {
-  background: var(--color-five);
-  opacity: 0.8;
-  color: white;
 }
 
 .weather-paragraph,
@@ -277,11 +303,82 @@ a:hover {
   border: 1px solid black;
 }
 
+.search-btn:hover {
+  color: white;
+  font-weight: bolder;
+  background-color: var(--color-five);
+  font-family: var(--secondary-font);
+}
+
+.dynamic-subheading {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+  font-size: 40px;
+}
+
+.dynamic-subheading:hover {
+  letter-spacing: 20px;
+  color: #000000;
+  cursor: pointer;
+  text-shadow: 2px 2px var(--color-five);
+}
+
+.technologies-used, ul {
+  margin: 0px;
+  padding-left: 0!important;
+}
+
+.technology {
+  display: inline;
+  background-color: var(--color-five);
+  color: #ffffff;
+  padding: 8px;
+  margin: 5px;
+  width: 100px;
+}
+
+
+.technologies-used, li {
+  float: left;
+  display: inline;
+  text-align: center;
+  padding: 24px;
+  text-decoration: none;
+}
+
+.skills-list {
+  padding: 0 10px 0 10px;
+}
+
+.skill {
+  background-color: var(--color-five);
+  color: #ffffff;
+  padding: 8px;
+  margin: 5px;
+}
+
+.hobbies-list, li {
+  text-align: center;
+}
+
+.CV-link {
+padding-top: 10px;
+}
+
+.CV {
+  color: rgb(255, 106, 0);
+}
+
+.about-paragraph {
+  padding-top: 20px;
+  text-align: left;
+}
+
 
 @media (max-width: 575px) {
   .hero h1 {
     font-size: 10vw;
-    
   }
 
   .hero h2 {
@@ -306,17 +403,22 @@ a:hover {
     font-size: 20px;
   }
 
-  .img-fluid {
-    padding: 20px;
-  }
+img {
+  margin-left: 0!important;
+}
 
-  h1,
+.img-fluid {
+    padding: 0px;
+    margin: 0 0 0 0!important;
+}
+
+h1,
   h2,
   h3 {
     padding-top: 10px;
     text-align: center;
     font-size: 10vw;
-  }
+}
 
   .weather-paragraph,
   .self-care-paragraph {
