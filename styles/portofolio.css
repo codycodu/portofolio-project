@@ -4,15 +4,21 @@
   --secondary-font: "Fauna One", serif;
   --primary-color: #b4c7b0;
   --buttons: 1px solid black;
-  --color-one: #edeae5;
-  --color-two: #ded2c4;
-  --color-three: #bfc0b6;
-  --color-four: #d3d4c7;
-  --color-five: #7c756b;
+  --color-one: #DBD6D2;
+  --color-two: #DBD2D8;
+  --color-three: #c6c7c3;
+  --color-four: #5416a5;
+  --color-five: #A28899;
+  --color-six: #C827BB;
+  --color-seven: #ffffff;
+}
+
+section, .hero-content {
+  margin: 50px 150px!important;
 }
 
 body {
-  background: var(--color-four);
+  background: var(--color-seven);
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -20,8 +26,8 @@ body {
 }
 
 .container {
-  background: #d3d4c7;
-  margin-top: 10px;
+  background: var(--color-seven);
+  margin-top: 70px 70px 70px 70px!important;
 }
 
 .container, h2 {
@@ -29,11 +35,11 @@ body {
 }
 
 .navbar {
-  background-color: var(--color-three);
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   color: var(--color-four);
-  border: 1px solid var(--color-three);
+  border: 1px solid white;
 }
 
 .navigation-links {
@@ -51,8 +57,8 @@ body {
 }
 
 .hero {
-  padding: 100px 120px;
-  background-color: var(--color-four);
+  
+  background-color: var(--color-two);
 }
 
 .hero p {
@@ -93,6 +99,7 @@ h1 {
 
 h2 {
   font-family: var(--secondary-font);
+  color: var(--color-five)
 }
 
 h3 {
@@ -108,8 +115,7 @@ h4 {
 }
 
 p {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 0px;
   border-radius: 4px;
   font-size: 20px;
   line-height: 2;
@@ -124,10 +130,14 @@ hr {
 footer {
   position: relative;
   padding: 0px;
-  background-color: var(--color-three);
+  background-color: var(--color-two);
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+#footer-text {
+  font-size: 15px;
 }
 
 .footer-text {
@@ -181,7 +191,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-five);
+  color: var(--color-three);
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -190,7 +200,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-bottom: 200px;
 }
 
 .about-row {
@@ -219,7 +228,8 @@ img:hover {
 .profile-pic {
   max-width: 100%;
   width: 300px;
-  margin: 0;
+  margin: 20px!important;
+  border-radius: 50%!important;
 }
 
 #contact {
@@ -245,7 +255,7 @@ img:hover {
 
 .email-link:hover {
   text-decoration: none;
-  color: var(--color-five);
+  color: var(--color-three);
   font-family: var(--secondary-font);
 }
 
@@ -265,13 +275,13 @@ img:hover {
   font-family: var(--secondary-font);
   margin-left: 0;
   border: var(--buttons);
-  box-shadow: 10px 10px var(--color-five);
+  box-shadow: 10px 10px var(--color-three);
 }
 
 .contact-me-btn:hover,
 .my-work-btn:hover,
 .info-link:hover {
-  background-color: var(--color-five);
+  background-color: var(--color-three);
   box-shadow: none;
   border-radius: 4px;
   padding: 20px 15px;
@@ -287,12 +297,14 @@ img:hover {
 }
 
 .contact-me-btn,
-.my-work-btn {
-  margin-left: 10px;
+.my-work-btn,
+.open-btn,
+github.btn {
   margin-right: 10px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
+
 
 .weather-paragraph,
 .self-care-paragraph {
@@ -306,7 +318,7 @@ img:hover {
 .search-btn:hover {
   color: white;
   font-weight: bolder;
-  background-color: var(--color-five);
+  background-color: var(--color-three);
   font-family: var(--secondary-font);
 }
 
@@ -314,14 +326,15 @@ img:hover {
   letter-spacing: 10px;
   text-transform: uppercase;
   font-family: var(--primary-font);
-  font-size: 40px;
+  font-size: 20px;
+  text-align: left;
 }
 
 .dynamic-subheading:hover {
   letter-spacing: 20px;
   color: #000000;
   cursor: pointer;
-  text-shadow: 2px 2px var(--color-five);
+  text-shadow: 2px 2px var(--color-three);
 }
 
 .technologies-used, ul {
@@ -331,7 +344,7 @@ img:hover {
 
 .technology {
   display: inline;
-  background-color: var(--color-five);
+  background-color: var(--color-three);
   color: #ffffff;
   padding: 8px;
   margin: 5px;
@@ -352,11 +365,39 @@ img:hover {
 }
 
 .skill {
-  background-color: var(--color-five);
+  background-color: var(--color-three);
   color: #ffffff;
   padding: 8px;
   margin: 5px;
 }
+
+.skill-icon {
+  size: 100px;
+}
+
+.container-icons {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.box-icon {
+  width: 30%;
+    height: 142px;
+    margin-bottom: 10px;
+}
+
+.devicon-vscode-plain, .devicon-git-plain, .fa-brands {
+    font-size: 3.5rem;
+}
+
+.api-icon {
+  width: 25%;
+  margin: 0;
+}
+
 
 .hobbies-list, li {
   text-align: center;
@@ -375,8 +416,21 @@ padding-top: 10px;
   text-align: left;
 }
 
+section {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.home-about-p {
+  display:inline-block;
+}
 
 @media (max-width: 575px) {
+  section, .hero-content {
+  margin: 20px 20px!important;
+}
   .hero h1 {
     font-size: 10vw;
   }
@@ -388,6 +442,10 @@ padding-top: 10px;
   .hero {
     padding: 20px;
   }
+
+h3 {
+  font-size: 5vw;
+}
 
   h4 {
     font-size: 5vw;
@@ -401,6 +459,8 @@ padding-top: 10px;
   #contact,
   .email-link {
     font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
   }
 
 img {
@@ -412,9 +472,45 @@ img {
     margin: 0 0 0 0!important;
 }
 
+#profile-img-col {
+  width: 0;
+}
+
+.col-4 {
+  width:fit-content
+}
+
+.hobbies-list {
+  padding-top: 20px;
+}
+
+.who-is-cody {
+  width: fit-content;
+}
+
+.skills-list {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  width: fit-content
+}
+
+.skills {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-page-section {
+  text-align: center;
+}
+
+#contact-page-socials {
+  display: flex;
+  justify-content: center;
+  padding-right: 0;
+}
 h1,
-  h2,
-  h3 {
+  h2 {
     padding-top: 10px;
     text-align: center;
     font-size: 10vw;
@@ -465,7 +561,7 @@ h1,
 
   .footer-text, p {
     margin-bottom: 0;
-    padding: 10px 0px 10px 20px;
+    padding: 10px 20px 10px 20px;
   }
 
   .footer-social {
@@ -489,6 +585,20 @@ h1,
     display: block;
     margin: 0 auto;
     margin-top: 20px!important;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-paragraphs {
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+  }
+
+  .about-text {
+    padding: 20px;
   }
 
   .btn {
