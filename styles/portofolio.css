@@ -457,6 +457,37 @@ h3 {
     font-size: 5vw;
   }
 
+  .skill-icon {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container-icons {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.box-icon {
+  width: 10%;
+  height: 142px;
+  margin-bottom: 10px;
+  padding: 50px;
+}
+
+.box-icon p {
+  font-size: 15px;
+  text-align: center;
+  padding: 0;
+}
+
+.api-icon {
+  width: 10%;
+}
+
+
   #contact,
   .email-link {
     font-size: 20px;
@@ -464,8 +495,13 @@ h3 {
     margin-top: 10px;
   }
 
+.open-btn, .github-btn {
+  margin-top: 30px!important;
+}
+
 img {
-  margin-left: 0!important;
+  display: block;
+  margin: 0 auto;
 }
 
 .img-fluid {
