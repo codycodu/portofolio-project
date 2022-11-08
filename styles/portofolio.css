@@ -157,9 +157,9 @@ footer {
   justify-content: space-between;
 }
 
- .copy-right-text {
-    margin: 10px 0 0 0;
-  }
+.copy-right-text {
+  margin: 10px 0 0 0;
+}
 
 .col-6 {
   width: 50%;
@@ -179,7 +179,7 @@ footer {
 }
 
 .social-icons-footer {
-  font-size: 30px;
+  font-size: 30px!important;
   text-align: right !important;
   padding: 0px 0px;
   letter-spacing: 10px;
@@ -241,6 +241,10 @@ img:hover {
   padding: 20px;
   margin-top: 4px;
   margin-bottom: 100px;
+}
+
+#contact-page-socials {
+  font-size: 3.5rem;
 }
 
 .email-link {
@@ -372,7 +376,7 @@ github.btn {
 }
 
 .skill-icon {
-  size: 100px;
+  font-size: 3.5rem;
 }
 
 .container-icons {
@@ -385,16 +389,13 @@ github.btn {
 
 .box-icon {
   width: 30%;
-    height: 142px;
-    margin-bottom: 10px;
+  height: 142px;
+  margin-bottom: 10px;
 }
 
-.devicon-vscode-plain, .devicon-git-plain, .fa-brands {
-    font-size: 3.5rem;
-}
 
 .api-icon {
-  width: 25%;
+  width: 20%;
   margin: 0;
 }
 
@@ -505,7 +506,7 @@ img {
 }
 
 #contact-page-socials {
-  display: flex;
+  display: inline;
   justify-content: center;
   padding-right: 0;
 }
