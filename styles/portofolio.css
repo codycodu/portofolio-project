@@ -4,17 +4,18 @@
   --secondary-font: "Fauna One", serif;
   --primary-color: #b4c7b0;
   --buttons: 1px solid black;
-  --color-one: #DBD6D2;
-  --color-two: #DBD2D8;
+  --color-one: #dbd6d2;
+  --color-two: #dbd2d8;
   --color-three: #c6c7c3;
   --color-four: #5416a5;
-  --color-five: #A28899;
-  --color-six: #C827BB;
+  --color-five: #a28899;
+  --color-six: #c827bb;
   --color-seven: #ffffff;
 }
 
-section, .hero-content {
-  margin: 50px 150px!important;
+section,
+.hero-content {
+  margin: 50px 150px !important;
 }
 
 body {
@@ -27,10 +28,11 @@ body {
 
 .container {
   background: var(--color-seven);
-  margin-top: 70px 70px 70px 70px!important;
+  margin-top: 70px 70px 70px 70px !important;
 }
 
-.container, h2 {
+.container,
+h2 {
   text-transform: capitalize;
 }
 
@@ -57,8 +59,12 @@ body {
 }
 
 .hero {
-  
   background-color: var(--color-two);
+}
+
+#home-hero {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .hero p {
@@ -76,7 +82,7 @@ body {
   padding: 50px 150px;
 }
 
- #about-section {
+#about-section {
   font-size: 60px;
 }
 
@@ -85,8 +91,12 @@ body {
   text-align: left;
 }
 
-p, h1, h2, h3, h4 {
-  text-transform:none;
+p,
+h1,
+h2,
+h3,
+h4 {
+  text-transform: none;
 }
 
 h1 {
@@ -99,7 +109,7 @@ h1 {
 
 h2 {
   font-family: var(--secondary-font);
-  color: var(--color-five)
+  color: var(--color-five);
 }
 
 h3 {
@@ -179,10 +189,14 @@ footer {
 }
 
 .social-icons {
-  font-size: 30px!important;
+  font-size: 30px !important;
   text-align: right !important;
   padding: 0px 0px;
   letter-spacing: 10px;
+}
+
+#header-social-icons {
+  text-align: left !important;
 }
 
 a {
@@ -191,7 +205,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-three);
+  color: var(--color-four);
   font-weight: bold;
 }
 
@@ -227,12 +241,11 @@ img:hover {
   max-width: 450px;
 }
 
-
 .profile-pic {
   max-width: 100%;
   width: 300px;
-  margin: 20px!important;
-  border-radius: 50%!important;
+  margin: 20px !important;
+  border-radius: 50% !important;
 }
 
 #contact {
@@ -273,7 +286,7 @@ img:hover {
 }
 
 .info-link {
-  border-radius: 4px;
+  border-radius: 50px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
@@ -281,19 +294,15 @@ img:hover {
   font-family: var(--secondary-font);
   margin-left: 0;
   border: var(--buttons);
-  box-shadow: 10px 10px var(--color-three);
+  transition: all 200ms ease;
 }
 
 .contact-me-btn:hover,
 .my-work-btn:hover,
 .info-link:hover {
-  background-color: var(--color-three);
-  box-shadow: none;
-  border-radius: 4px;
-  padding: 20px 15px;
-  margin: 10px 10px 0px 0px;
+  background-color: var(--color-four);
   letter-spacing: 0;
-  font-weight:bolder;
+  font-weight: bolder;
   color: white;
   border: none;
 }
@@ -310,7 +319,6 @@ github.btn {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-
 
 .weather-paragraph,
 .self-care-paragraph {
@@ -340,12 +348,13 @@ github.btn {
   letter-spacing: 20px;
   color: #000000;
   cursor: pointer;
-  text-shadow: 2px 2px var(--color-three);
+  font-weight: bold;
 }
 
-.technologies-used, ul {
+.technologies-used,
+ul {
   margin: 0px;
-  padding-left: 0!important;
+  padding-left: 0 !important;
 }
 
 .technology {
@@ -357,8 +366,8 @@ github.btn {
   width: 100px;
 }
 
-
-.technologies-used, li {
+.technologies-used,
+li {
   float: left;
   display: inline;
   text-align: center;
@@ -395,19 +404,18 @@ github.btn {
   margin-bottom: 10px;
 }
 
-
 .api-icon {
   width: 20%;
   margin: 0;
 }
 
-
-.hobbies-list, li {
+.hobbies-list,
+li {
   text-align: center;
 }
 
 .CV-link {
-padding-top: 10px;
+  padding-top: 10px;
 }
 
 .CV {
@@ -427,13 +435,14 @@ section {
 }
 
 .home-about-p {
-  display:inline-block;
+  display: inline-block;
 }
 
 @media (max-width: 575px) {
-  section, .hero-content {
-  margin: 20px 20px!important;
-}
+  section,
+  .hero-content {
+    margin: 20px 20px !important;
+  }
   .hero h1 {
     font-size: 10vw;
   }
@@ -446,9 +455,9 @@ section {
     padding: 20px;
   }
 
-h3 {
-  font-size: 5vw;
-}
+  h3 {
+    font-size: 5vw;
+  }
 
   h4 {
     font-size: 5vw;
@@ -460,35 +469,34 @@ h3 {
   }
 
   .skill-icon {
-  font-size: 30px;
-  text-align: center;
-}
+    font-size: 30px;
+    text-align: center;
+  }
 
-.container-icons {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 40px;
-}
+  .container-icons {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
 
-.box-icon {
-  width: 10%;
-  height: 142px;
-  margin-bottom: 10px;
-  padding: 50px;
-}
+  .box-icon {
+    width: 10%;
+    height: 142px;
+    margin-bottom: 10px;
+    padding: 50px;
+  }
 
-.box-icon p {
-  font-size: 15px;
-  text-align: center;
-  padding: 0;
-}
+  .box-icon p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+  }
 
-.api-icon {
-  width: 10%;
-}
-
+  .api-icon {
+    width: 10%;
+  }
 
   #contact,
   .email-link {
@@ -497,63 +505,64 @@ h3 {
     margin-top: 10px;
   }
 
-.open-btn, .github-btn {
-  margin-top: 30px!important;
-}
+  .open-btn,
+  .github-btn {
+    margin-top: 30px !important;
+  }
 
-img {
-  display: block;
-  margin: 0 auto;
-}
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 
-.img-fluid {
+  .img-fluid {
     padding: 0px;
-    margin: 0 0 0 0!important;
-}
+    margin: 0 0 0 0 !important;
+  }
 
-#profile-img-col {
-  width: 0;
-}
+  #profile-img-col {
+    width: 0;
+  }
 
-.col-4 {
-  width:fit-content
-}
+  .col-4 {
+    width: fit-content;
+  }
 
-.hobbies-list {
-  padding-top: 20px;
-}
+  .hobbies-list {
+    padding-top: 20px;
+  }
 
-.who-is-cody {
-  width: fit-content;
-}
+  .who-is-cody {
+    width: fit-content;
+  }
 
-.skills-list {
-  text-align: center;
-  padding: 20px;
-  margin: 20px;
-  width: fit-content
-}
+  .skills-list {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    width: fit-content;
+  }
 
-.skills {
-  display: block;
-  margin: 0 auto;
-}
+  .skills {
+    display: block;
+    margin: 0 auto;
+  }
 
-.contact-page-section {
-  text-align: center;
-}
+  .contact-page-section {
+    text-align: center;
+  }
 
-#contact-page-socials {
-  display: inline;
-  justify-content: center;
-  padding-right: 0;
-}
-h1,
+  #contact-page-socials {
+    display: inline;
+    justify-content: center;
+    padding-right: 0;
+  }
+  h1,
   h2 {
     padding-top: 10px;
     text-align: center;
     font-size: 10vw;
-}
+  }
 
   .weather-paragraph,
   .self-care-paragraph {
@@ -591,14 +600,15 @@ h1,
   .social-icons {
     font-size: 5vw;
     padding: 0px 10px 10px 10px;
-    text-align: left!important;
+    text-align: left !important;
   }
 
   .footer-text {
     margin-top: 0;
   }
 
-  .footer-text, p {
+  .footer-text,
+  p {
     margin-bottom: 0;
     padding: 10px 20px 10px 20px;
   }
@@ -614,7 +624,8 @@ h1,
     padding-top: 0;
   }
 
- .social-icons, ul {
+  .social-icons,
+  ul {
     padding-left: 0;
     margin-top: 5px;
   }
@@ -623,7 +634,7 @@ h1,
   .my-work-btn {
     display: block;
     margin: 0 auto;
-    margin-top: 20px!important;
+    margin-top: 20px !important;
   }
 
   .about-section {
